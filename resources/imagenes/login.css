@@ -1,0 +1,103 @@
+.root {
+	/*This applies styling for the root node*/
+	-fx-background-image: url("simple-old-paper-1-transparent.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-size: cover;
+	-fx-background-position: center center;
+	-fx-font-family: "Copperplate Gothic Light";
+}
+
+.bienvenido {
+	-fx-font-family: "Copperplate Gothic Light";
+	-fx-font-size: 300%;
+}
+
+.button {
+
+	-fx-font-size: 16px;
+	-fx-background-image: url("plain-old-cardboard-paper-images-17.png");
+	-fx-background-repeat: strtch;
+	-fx-background-size: cover;
+	-fx-background-color: transparent;
+	-fx-background-position: center center;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 2), 20, 0, 0, 0);
+	
+}
+.button:hover{
+	 -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+    
+}
+
+.text {
+	-fx-font-size: 16px;
+}
+
+.image {
+	-fx-graphic: url("47774.png");
+	-fx-background-repeat: stretch;
+}
+
+.botonMoverse {
+	-fx-font-size: 13px;
+	-fx-background-image: url("plain-old-cardboard-paper-images-17.png");
+	-fx-background-repeat: stretch;
+	-fx-background-size: 100 40;
+	-fx-background-color: transparent;
+	-fx-background-position: center center;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 2), 20, 0, 0, 0);
+}
+
+.botonMoverseLargo {
+	-fx-font-size: 13px;
+	-fx-background-image: url("plain-old-cardboard-paper-images-17.png");
+	-fx-background-repeat: stretch;
+	-fx-background-size: 170 40;
+	-fx-background-color: transparent;
+	-fx-background-position: center center;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 2), 20, 0, 0, 0);
+}
+
+.tabla {
+	-fx-background-image: url("plain-old-cardboard-paper-images-17.png");
+	-fx-background-repeat: stretch;
+	-fx-background-size: 262 383;
+	-fx-background-color: transparent;
+}
+
+.titulo {
+	-fx-font-weight: bold; -fx-font-family : "Copperplate Gothic Light";
+	-fx-font-size: 250%;
+	-fx-font-family: "Copperplate Gothic Light";
+}
+
+.imagenOpciones {
+	-fx-background-color: transparent;
+	-fx-background-image: url("plain-old-cardboard-paper-images-17.png");
+	
+	
+	
+}
+.botonLista:hover .imagenOpciones {
+	-fx-background-color: transparent;
+	-fx-background-image: url("MH_Size_Chart.png");
+	
+	
+	
+}
+
+.botonAnhadir:hover >.imagenOpciones {
+	-fx-background-color: transparent;
+	-fx-background-image: url("MH_Size_Chart.png");
+	
+	
+	
+}
+
+.botonEntrar{
+	  -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+

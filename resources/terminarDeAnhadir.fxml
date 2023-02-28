@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@imagenes/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.TermninarDeAnhadirController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="btnCancelar" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#cancelar" prefHeight="90.0" prefWidth="133.0" text="Cancelar" textAlignment="RIGHT" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="btnConfirmar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#confirmar" prefHeight="90.0" prefWidth="137.0" text="Confirmar" />
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="Materiales">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="materiales1" prefHeight="22.0" prefWidth="138.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="materiales2">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="materiales3">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="materiales4">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="Notas" wrappingWidth="103.61328125">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <TextArea fx:id="txtNotas" prefHeight="200.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="Descripción">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <TextArea fx:id="txtDescripcion" prefHeight="200.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="Tamaño">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Spinner fx:id="metros">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                  </Spinner>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="m">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Spinner fx:id="centimetros">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Spinner>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="cm">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" stylesheets="@imagenes/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.PantallaMenuController">
+   <top>
+      <MenuBar fx:id="borderPane" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+              <MenuItem fx:id="btnMenuCB" mnemonicParsing="false" onAction="#irAListado" text="Lista Wyverns" />
+                  <MenuItem fx:id="btnMenuDP" mnemonicParsing="false" onAction="#irAAñadir" text="AñadirWyverns" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Salir ">
+            <items>
+              <MenuItem fx:id="btnMenuL" mnemonicParsing="false" onAction="#hacerLogout" text="Logout" />
+                  <MenuItem fx:id="btnMenuCerrar" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
